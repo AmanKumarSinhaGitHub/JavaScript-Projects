@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,
+body {
+    width: 100%;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+
+    & .container {
+        font-size: 2rem;
+        color: white;
+        background-color: rgba(184, 135, 11, 0.829);
+    }
+
+    & ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        & li {
+            list-style: none;
+            padding: 2rem 3rem;
+
+            & a {
+                text-decoration: none;
+                color: white;
+            }
+
+            & a:hover {
+                color: rgb(202, 195, 175);
+            }
+        }
+    }
+}
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & .container {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 2rem;
+
+
+        & h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    & .projects {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+
+        & .card {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 18rem;
+            width: 30rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            
+            & .button{
+                font-weight: 600;
+                font-size: 1.6rem;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                
+                & a {
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+            
+
+            & .card-title {
+                font-size: 2rem;
+                padding: 3rem 0 2rem 0;
+                
+            }
+        }
+    }
+
+}
