@@ -6,7 +6,8 @@ let isFriend = false;
 button.addEventListener("click", function(){
    
     if(isFriend){
-        currentStatus.innerHTML = "You are Friends";
+        currentStatus.innerHTML = "We are Friends!";
+        currentStatus.style.color = "green";
         button.innerHTML = "Remove"
         isFriend = !isFriend;
         
@@ -14,6 +15,7 @@ button.addEventListener("click", function(){
     else{
         currentStatus.innerHTML = "Stranger";
         button.innerHTML = "Add Friend";
+        currentStatus.style.color = "red";
         isFriend = !isFriend;
         
     }

@@ -1,0 +1,44 @@
+.form-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    & h1 {
+        font-size: 3rem;
+    }
+
+    & form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        font-size: 2rem;
+
+
+        & input, textarea{
+            margin: 1rem;
+            padding: 1rem 3rem;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            border-style: none;   
+            border: 1.5px solid black;         
+        }
+
+        & button {
+            margin: 1.6rem;
+            padding: 1rem 3rem;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            border-style: none;   
+            border: 1.5px solid black;  
+            cursor: pointer;
+        }
+    }
+    
+}

@@ -11,7 +11,7 @@ main {
 
     & .container {
 
-        & h1{
+        & h1 {
             color: rgb(24, 22, 22);
         }
 
@@ -25,50 +25,39 @@ main {
             margin-top: 2rem;
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
             height: 40rem;
             width: 30rem;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             border-radius: 1rem;
             background-color: white;
-            
+
 
 
             & .image {
                 background-image: url(model.jpg);
-                height: 18rem;
+                height: 35rem;
                 width: 25rem;
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 border-radius: 0.6rem;
-                margin-top: 2rem;
-            }
-
-            & #currentStatus {
-                color: red;
-                font-size: 2rem;
-                font-weight: 600;
-                padding: 1rem 0 2rem 0;
-            }
-
-            & .button {
-                font-weight: 400;
-                font-size: 1.6rem;
-                padding: 1rem 2rem;
-                border-radius: 5px;
-                background-color: rgb(68, 146, 66);
-                cursor: pointer;
-                color: white;
                 
             }
 
+          
 
-            & .card-title {
-                font-size: 2rem;
-                padding: 2rem 0 1rem 0;
-
+            & i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                font-size: 7rem;
+                color: white;
+                opacity: 0;
+                transition: transform ease 0.5s;
             }
-
 
         }
     }

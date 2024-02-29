@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Javascript Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
 
 </head>
 
@@ -21,8 +22,27 @@
         </div>
     </nav>
     <main>
-        <div class="container">
-            <h1>Coming Soon</h1>
+        <div class="form-container">
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/myyrjljn" method="POST">
+                <label>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                </label>
+
+                <label>
+                    <input type="email" name="email" placeholder="Your Email ID" required>
+                </label>
+
+                <label>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </label>
+
+                <label>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </main>
 
