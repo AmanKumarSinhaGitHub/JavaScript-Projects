@@ -13,8 +13,8 @@ body{
     padding-left: 2rem;
 
     & img{
-        height: 10rem;
-        width: 10rem;
+        height: 11rem;
+        width: 11rem;
         border-radius: 50%;
         object-fit: cover;
         object-position: center;
