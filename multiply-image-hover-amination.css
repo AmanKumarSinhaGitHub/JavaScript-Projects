@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(23, 19, 19);
+    color: white;
+}
+
+.box{
+    height: 9rem;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+
+    & img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        opacity: 0;
+        transition: all linear 0.3s;
+    }
+
+    & p {
+        font-size: 5rem;
+        font-weight: 700;
+        z-index: 1;
+        mix-blend-mode: difference;
+    }
+}
