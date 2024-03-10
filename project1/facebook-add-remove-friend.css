@@ -35,7 +35,7 @@ main {
 
 
             & .image {
-                background-image: url(images/model.webp);
+                background-image: url(/images/model.webp);
                 height: 18rem;
                 width: 25rem;
                 background-repeat: no-repeat;

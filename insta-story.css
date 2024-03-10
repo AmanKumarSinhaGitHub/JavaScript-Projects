@@ -12,11 +12,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
+    padding: 1rem;
     flex-direction: column;
 
     & .card {
-      height: 50rem;
+      height: 55rem;
       width: 33rem;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
