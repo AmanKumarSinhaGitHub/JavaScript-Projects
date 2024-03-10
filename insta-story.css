@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(209, 200, 173);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+
+    & .card {
+      height: 50rem;
+      width: 33rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 1rem;
+      background-color: white;
+
+      & .stories {
+        height: 12rem;
+        width: 100%;
+        border-bottom: 1.5px solid #555;
+
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 1.4rem;
+
+        & .story {
+          height: 9rem;
+          width: 9rem;
+          border-radius: 50%;
+          background: linear-gradient(
+            #ffd600,
+            #ff7a00,
+            #ff0069,
+            #d300c5,
+            #7638fa
+          );
+          padding: 5px;
+          overflow: hidden;
+          display: inline-block;
+          margin: 0 0.2rem;
+
+          & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      & .stories::-webkit-scrollbar {
+        display: none;
+      }
+
+      & .text {
+        padding-top: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
