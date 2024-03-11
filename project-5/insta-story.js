@@ -1,18 +1,23 @@
 let images = [
   {
     src: "images/peacock.webp",
+    story: "images/peacock.webp",
   },
   {
     src: "images/eagle.webp",
+    story: "images/eagle.webp",
   },
   {
     src: "images/lion.webp",
+    story: "images/lion.webp",
   },
   {
     src: "images/deer.webp",
+    story: "images/deer.webp",
   },
   {
     src: "images/model.webp",
+    story: "images/model.webp",
   },
 ];
 
@@ -25,3 +30,13 @@ images.forEach((image, index) => {
 
 let stories = document.querySelector(".stories");
 stories.innerHTML = story;
+
+stories.addEventListener("click", (dets) => {
+  
+  document.querySelector("#fullscreen").style.display = "block";
+  document.querySelector("#fullscreen").style.backgroundImage = `url(${images[dets.target.id].story})`;
+
+  setTimeout(() => {
+    document.querySelector("#fullscreen").style.display = "none";
+  }, 3000);
+});
