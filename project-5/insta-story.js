@@ -8,16 +8,32 @@ let images = [
     story: "images/eagle.webp",
   },
   {
-    src: "images/lion.webp",
-    story: "images/lion.webp",
-  },
-  {
     src: "images/deer.webp",
     story: "images/deer.webp",
   },
   {
     src: "images/model.webp",
     story: "images/model.webp",
+  },
+  {
+    src: "images/building.webp",
+    story: "images/building.webp",
+  },
+  {
+    src: "images/cars.webp",
+    story: "images/cars.webp",
+  },
+  {
+    src: "images/flower.webp",
+    story: "images/flower.webp",
+  },
+  {
+    src: "images/mac.webp",
+    story: "images/mac.webp",
+  },
+  {
+    src: "images/swan.webp",
+    story: "images/swan.webp",
   },
 ];
 
